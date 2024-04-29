@@ -2,8 +2,9 @@ html {
     height: 100%;
 }
 
+
 body {
-    background: url('/media/bacground.jpg') no-repeat center center fixed;
+    background: url('/media/bacground.jpg') no-repeat center center fixed ;
     background-size: cover;
     height: calc(100vh -164px);
     font-family: 'Lato';
@@ -13,6 +14,14 @@ body {
 .logo-img {
     max-width: 360px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+.text-black {
+    color: #003773 !important;
+}
+
+.dropdown-menu {
+    background-color: #edb409 !important;
 }
 
 /* Slightly larger container on xl screens */
