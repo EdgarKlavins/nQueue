@@ -8,7 +8,7 @@ class Genre(models.Model):
 
 
 class Year(models.Model):
-    year = models.IntegerField()
+    year = models.CharField(max_length=14)
 
     def __str__(self):
         return str(self.year)
@@ -25,6 +25,7 @@ class Product(models.Model):
     year = models.ForeignKey(Year, null=True, blank=True, on_delete=models.SET_NULL)
     author = models.ForeignKey(Author, null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
+    description = models.CharField(max_length=1024, null = True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
