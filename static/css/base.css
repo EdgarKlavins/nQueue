@@ -10982,6 +10982,14 @@ p {
   }
 }
 
+@media (max-width: 576px) { 
+  .card {
+      width: 75%; 
+      max-width: 100%; 
+      margin: 0 auto; 
+  }
+}
+
 @media (min-width: 992px) {
   .product-item .product-item-title {
     position: relative;
@@ -11037,21 +11045,23 @@ p {
 
 .custom-title {
   font-size: 14px;
-  white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Display ellipsis for overflow text */
+  white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .card-container {
-  margin-top: 50px; /* Add 50px space from the top */
+  margin-top: 50px; 
   margin-bottom: 20px;
 }
 
-.custom-card {
-  background-color: rgba(47, 23, 15, 0.9);
-}
+
 
 .custom-body {
   background-color: rgba(230, 167, 86, 1);
+}
+
+.col-6 {
+  margin: 5px 5px 5px 5px; 
 }
 

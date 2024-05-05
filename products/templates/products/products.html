@@ -1,128 +1,48 @@
+{% extends "base.html" %}
 
-{% load static %}
+{% block extra_title %} - Products{% endblock %}
 
-<!doctype html>
-<html lang="en">
-    <head>
-      {% block meta %}
-         <meta charset="utf-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-         <meta name="description" content="" />
-         <meta name="author" content="" />
-       {% endblock %}
+{% block content %}
 
-
-       {% block extra_meta %}
-       {% endblock %}
-
-
-       {% block corecss %}
-         <link rel="icon" type="image/x-icon" href="{% static 'bacground.jpg' %}" />
-         <!-- Google fonts-->
-         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-         <!-- Core theme CSS (includes Bootstrap)-->
-         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        {% endblock %}
-
-        {% block extra_css %}
-        {% endblock %}
-
-
-        {% block corejs %}
-         <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        {% endblock %}
-
-        <title>Nqueue - Save your time save your money {% block extra_title %}{% endblock %}</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">nQueue - Personal Development Books</span>
-                <span class="site-heading-lower">Invest in yourself</span>
-            </h1>
-        </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">nQueue</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-4 dropdown">
-                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Books
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
-                              <a class="dropdown-item" href="#">All books</a>
-                              <a class="dropdown-item" href="#">By Genre</a>
-                              <a class="dropdown-item" href="#">By Rating</a>
-                              <a class="dropdown-item" href="#">By Year</a>
-                              <a class="dropdown-item" href="#">By Author</a>
-                            </div>
-                        </li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Best Sellers</a></li>
-                        <li class="nav-item px-lg-4 dropdown">
-                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Your Account
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
-                                    {% endif %}
-                                    <a href="" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
-                            </div> 
-                       </li>
-                       <li class="list-inline-item">
-                          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                              <div class="text-center">
-                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                  <p class="my-0">
-                                      {% if grand_total %}
-                                         ${{ grand_total|floatformat:2 }}
-                                      {% else %}
-                                          £0.00
-                                      {% endif %}
-                                 </p>
-                             </div>
-                          </a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        {% block content %}
-        <div class="container card-container custom-card">
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        {% for product in products %}
-                            <div class="col-6 col-lg-2">
-                                <div class="card h-100 d-flex flex-column">
-                                    <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
-                                    <div class="card-body custom-body">
-                                        <h5 class="card-title custom-title">{{ product.name }}</h5>
-                                        <p class="card-text">Price: {{ product.price }}</p>
-                                        <p class="card-text">Rating: {{ product.rating }}</p>
-                                        <!-- Add more details about the product as needed -->
-                                    </div>
+    <div class="container card-container custom-card">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 d-flex flex-column">
+                                <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
+                                <div class="card-body custom-body">
+                                    <h5 class="card-title custom-title">{{ product.name }}</h5>
+                                    <p class="card-text">Price: £{{ product.price }}</p>
+                                    <small class="card-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                    <!-- Add more details about the product as needed -->
                                 </div>
                             </div>
-                        {% endfor %}
-                    </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
-        {% endblock %}
+    </div>
+{% endblock %}

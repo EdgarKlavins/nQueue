@@ -2,158 +2,143 @@
 
 <!doctype html>
 <html lang="en">
-    <head>
-      {% block meta %}
-         <meta charset="utf-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-         <meta name="description" content="" />
-         <meta name="author" content="" />
-       {% endblock %}
+<head>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    {% endblock %}
 
+    {% block extra_meta %}
+    {% endblock %}
 
-       {% block extra_meta %}
-       {% endblock %}
+    {% block corecss %}
+        <link rel="icon" type="image/x-icon" href="{% static 'bacground.jpg' %}">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
 
+    {% block extra_css %}
+    {% endblock %}
 
-       {% block corecss %}
-         <link rel="icon" type="image/x-icon" href="{% static 'bacground.jpg' %}" />
-         <!-- Google fonts-->
-         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-         <!-- Core theme CSS (includes Bootstrap)-->
-         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        {% endblock %}
+    {% block corejs %}
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    {% endblock %}
 
-        {% block extra_css %}
-        {% endblock %}
-
-
-        {% block corejs %}
-         <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        {% endblock %}
-
-        <title>Nqueue - Save your time save your money {% block extra_title %}{% endblock %}</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">nQueue - Personal Development Books</span>
-                <span class="site-heading-lower">Invest in yourself</span>
-            </h1>
-        </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">nQueue</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-4 dropdown">
-                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Books
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
-                              <a class="dropdown-item" href="#">All books</a>
-                              <a class="dropdown-item" href="#">By Genre</a>
-                              <a class="dropdown-item" href="#">By Rating</a>
-                              <a class="dropdown-item" href="#">By Year</a>
-                              <a class="dropdown-item" href="#">By Author</a>
-                            </div>
-                        </li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Best Sellers</a></li>
-                        <li class="nav-item px-lg-4 dropdown">
-                            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Your Account
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
-                                    {% endif %}
-                                    <a href="" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
-                            </div> 
-                       </li>
-                       <li class="list-inline-item">
-                          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                              <div class="text-center">
-                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                  <p class="my-0">
-                                      {% if grand_total %}
-                                         ${{ grand_total|floatformat:2 }}
-                                      {% else %}
-                                          £0.00
-                                      {% endif %}
-                                 </p>
-                             </div>
-                          </a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'book5.jpg' %}" alt="open book" />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Second hand books</span>
-                            <span class="section-heading-lower">Worth Reading</span>
-                        </h2>
-                        <p class="mb-3"><strong>"All change is hard at first, messy in the middle and gorgeous at the end. " </strong> - Robin S. Sharma, The 5AM Club: Own Your Morning.</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Best Sellers</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
-                            <h4>“Your greatness is limited only by the investments you make in yourself.”  Grant Cardone</h4>
-                            <br>
-                            <p class="offer"><strong>Same day delivery in Birmingham, if you order before 14:00. Free delivery on orders above £15</strong></p>
+    <title>Nqueue - Save your time save your money {% block extra_title %}{% endblock %}</title>
+</head>
+<body>
+    {% block page_header %}
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">nQueue - Personal Development Books</span>
+            <span class="site-heading-lower">Invest in yourself</span>
+        </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">nQueue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4 dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Books
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
+                            <a class="dropdown-item" href="#">All books</a>
+                            <a class="dropdown-item" href="#">By Genre</a>
+                            <a class="dropdown-item" href="#">By Rating</a>
+                            <a class="dropdown-item" href="#">By Year</a>
+                            <a class="dropdown-item" href="#">By Author</a>
                         </div>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Best Sellers</a></li>
+                    <li class="nav-item px-lg-4 dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Your Account
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        £0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'book5.jpg' %}" alt="open book" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Second hand books</span>
+                        <span class="section-heading-lower">Worth Reading</span>
+                    </h2>
+                    <p class="mb-3"><strong>"All change is hard at first, messy in the middle and gorgeous at the end. " </strong> - Robin S. Sharma, The 5AM Club: Own Your Morning.</p>
+                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Best Sellers</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner bg-faded text-center rounded">
+                        <h4>“Your greatness is limited only by the investments you make in yourself.”  Grant Cardone</h4>
+                        <br>
+                        <p class="offer"><strong>Same day delivery in Birmingham, if you order before 14:00. Free delivery on orders above £15</strong></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        
+        </div>
+    </section>
+    {% endblock %}
 
+    <footer class="footer text-faded text-center py-5">
+        <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        {% if messages %}
-         <div class="message-container"></div>
-        {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
-
-        {% block contetnt %}
-        {% endblock %}
-
-        {% block postload_js %}
-        {% endblock %}
-
-
-
-    </body>
-
-      
-
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+</body>
 </html>
