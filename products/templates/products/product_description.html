@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+    <style>
+        /* Style to maintain aspect ratio of the image */
+        .image-container img {
+            width: 50%;
+            height: auto;
+        }
+
+    
+        
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container">
+                    {% if product.image_url %}
+                        <a href="{{ product.image_url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
+                        </a>
+                    {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <p class="p_name">{{ product.name }}</p>
+                    <p class="description_p">{{ product.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -11,11 +11,13 @@
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 d-flex flex-column">
-                                <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
+                                <a href="{% url 'product_description' product.id %}">
+                                    <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
+                                </a>
                                 <div class="card-body custom-body">
-                                    <h5 class="card-title custom-title">{{ product.name }}</h5>
+                                    <h5 class="card-title custom-title" style="font-weight: bold;">{{ product.name }}</h5>
                                     <p class="card-text">Price: £{{ product.price }}</p>
-                                    <small class="card-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                    <small class="card-text"><i class="fas fa-star mr-1" style="color: gold !important;"></i>{{ product.rating }} / 5</small>
                                     <!-- Add more details about the product as needed -->
                                 </div>
                             </div>

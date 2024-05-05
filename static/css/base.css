@@ -4272,7 +4272,7 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  width: 60%;
 }
 
 .card-img,
@@ -11065,3 +11065,11 @@ p {
   margin: 5px 5px 5px 5px; 
 }
 
+.description_p {
+  color: white;
+}
+
+.p_name {
+  color: white;
+  font-weight: bold;
+}
