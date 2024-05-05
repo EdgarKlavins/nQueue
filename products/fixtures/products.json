@@ -21,6 +21,41 @@
     }
 },
 {
+    "model": "products.genre",
+    "pk": 5,
+    "fields": {
+        "name": "Personal finance"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 6,
+    "fields": {
+        "name": "Biography"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 7,
+    "fields": {
+        "name": "Non-fiction"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 8,
+    "fields": {
+        "name": "Psychology"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 9,
+    "fields": {
+        "name": "Romance novel"
+    }
+},
+{
     "model": "products.year",
     "pk": 1,
     "fields": {
@@ -67,6 +102,41 @@
     "pk": 7,
     "fields": {
         "year": "2022"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 8,
+    "fields": {
+        "year": "2012"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 9,
+    "fields": {
+        "year": "1946"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 10,
+    "fields": {
+        "year": "2011"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 11,
+    "fields": {
+        "year": "1998"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 12,
+    "fields": {
+        "year": "2008"
     }
 },
 {
@@ -126,6 +196,69 @@
     }
 },
 {
+    "model": "products.author",
+    "pk": 10,
+    "fields": {
+        "name": "Robert Kiyosaki"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 11,
+    "fields": {
+        "name": "Charles Duhigg"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 12,
+    "fields": {
+        "name": "Jordan Peterson"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 13,
+    "fields": {
+        "name": "Viktor Frankl"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 14,
+    "fields": {
+        "name": "Daniel Kahneman"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 15,
+    "fields": {
+        "name": "Robert Greene"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 16,
+    "fields": {
+        "name": "Malcolm Gladwell"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 17,
+    "fields": {
+        "name": "Spencer Johnson"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 18,
+    "fields": {
+        "name": "Alain de Botton"
+    }
+},
+{
     "model": "products.product",
     "pk": 2,
     "fields": {
@@ -136,7 +269,7 @@
         "description": "Robin Sharma is a globally respected humanitarian. Widely considered one of the world's top leadership and personal optimization advisors, his clients include famed billionaires, professional sports superstars and many Fortune 100 companies. The author's #1 bestsellers, such as the Monk Who Sold His Ferrari, The Greatness Guide and The Leader Who Had No Title are in over 92 languages, making him one of the most broadly read writers alive today.",
         "price": "3.50",
         "rating": "4.80",
-        "image_url": "https://books.google.co.uk/books/publisher/content?id=-GWBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70ZhxLF_dijQavjdd-yHdnTlEstPpBCYLrGIwutPmhYXEiBZkHiW7cVI4rwK3FYxEzGusllaJvWULcEtovyJvlXyDTZoPhuDqN-Lh6e_fRJX_cOXtgEcbdoxflZ47VwQH-DGJj6",
+        "image_url": "https://m.media-amazon.com/images/I/41alUjROZ5L._SY445_SX342_.jpg",
         "image": ""
     }
 },
@@ -151,7 +284,7 @@
         "description": "A supremely practical and useful book. James Clear distils the most fundamental information about habit formation, so you can accomplish more by focusing on less.",
         "price": "7.40",
         "rating": "4.60",
-        "image_url": "https://images-eu.ssl-images-amazon.com/images/I/81Ls+SBCLiL._AC_UL232_SR232,232_.jpg",
+        "image_url": "https://m.media-amazon.com/images/I/41E0EMHIKpL._SX342_SY445_.jpg",
         "image": ""
     }
 },
@@ -242,6 +375,141 @@
         "price": "8.00",
         "rating": "4.20",
         "image_url": "https://m.media-amazon.com/images/I/41qCtjp7scL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "genre": 5,
+        "year": 3,
+        "author": 10,
+        "name": "Rich Dad Poor Dad",
+        "description": "Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy, financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence.",
+        "price": "10.49",
+        "rating": "4.40",
+        "image_url": "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "genre": 3,
+        "year": 8,
+        "author": 11,
+        "name": "The Power of Habit",
+        "description": "The Power of Habit: Why We Do What We Do in Life and Business is a book by Charles Duhigg, a New York Times reporter, published in February 2012 by Random House. It explores the science behind habit creation and reformation. The book reached the best seller list for The New York Times, Amazon.com, and USA Today.",
+        "price": "8.28",
+        "rating": "4.40",
+        "image_url": "https://m.media-amazon.com/images/I/41IhmDI07KL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "genre": 3,
+        "year": 2,
+        "author": 12,
+        "name": "12 Rules for Life",
+        "description": "12 Rules for Life: An Antidote to Chaos is a 2018 self-help book by the Canadian clinical psychologist Jordan Peterson. It provides life advice through essays in abstract ethical principles, psychology, mythology, religion, and personal anecdotes.",
+        "price": "15.69",
+        "rating": "4.60",
+        "image_url": "https://m.media-amazon.com/images/I/414DrcAE4-S._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "genre": 6,
+        "year": 9,
+        "author": 13,
+        "name": "Man's Search for Meaning",
+        "description": "Man's Search for Meaning is a 1946 book by Viktor Frankl chronicling his experiences as a prisoner in Nazi concentration camps during World War II, and describing his psychotherapeutic method, which involved identifying a purpose to each person's life through one of three ways: the completion of tasks, caring for another person, or finding meaning by facing suffering with dignity.",
+        "price": "7.39",
+        "rating": "4.50",
+        "image_url": "https://m.media-amazon.com/images/I/418jzUm2ZZL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "genre": 7,
+        "year": 10,
+        "author": 14,
+        "name": "Thinking, Fast and Slow",
+        "description": "Thinking, Fast and Slow is a 2011 popular science book by psychologist Daniel Kahneman. The book's main thesis is a differentiation between two modes of thought: \"System 1\" is fast, instinctive and emotional; \"System 2\" is slower, more deliberative, and more logical.",
+        "price": "10.35",
+        "rating": "4.50",
+        "image_url": "https://m.media-amazon.com/images/I/41ALfsawZDL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "genre": 3,
+        "year": 11,
+        "author": 15,
+        "name": "The 48 Laws of Power",
+        "description": "The 48 Laws of Power is a self-help book by American author Robert Greene. The book is a New York Times bestseller, selling over 1.2 million copies in the United States.",
+        "price": "11.45",
+        "rating": "4.60",
+        "image_url": "https://m.media-amazon.com/images/I/31RW8HQ31WL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "genre": 7,
+        "year": 12,
+        "author": 16,
+        "name": "Outliers",
+        "description": "Outliers: The Story of Success is a non-fiction book written by Malcolm Gladwell and published by Little, Brown and Company on November 18, 2008. In Outliers, Gladwell examines the factors that contribute to high levels of success.",
+        "price": "9.11",
+        "rating": "4.50",
+        "image_url": "https://m.media-amazon.com/images/I/41MJc+8fkyL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "genre": 8,
+        "year": 11,
+        "author": 17,
+        "name": "Who Moved My Cheese?",
+        "description": "Who Moved My Cheese? An Amazing Way to Deal with Change in Your Work and in Your Life, published on September 8, 1998, is a bestselling work and motivational business fable by Spencer Johnson.",
+        "price": "6.64",
+        "rating": "4.70",
+        "image_url": "https://m.media-amazon.com/images/I/414ABVOJ5ZL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "genre": 9,
+        "year": 5,
+        "author": 18,
+        "name": "The Course of Love",
+        "description": "In Edinburgh, a couple, Rabih and Kirsten, fall in love. They get married, they have children -- but no relationship is as simple as \"happily ever after.\" The Course of Love is a novel that explores what happens after the birth of love, what it takes to maintain love, and what happens to our original ideals under the pressures of an average existence. With philosophical insight and psychological acumen, Alain de Botton shows that our Romantic dreams may do us a grave disservice -- and explores what the alternatives might be. The conclusion, as the characters gradually discover, is that love is not \"an enthusiasm,\" but rather a \"skill\" that must be slowly and often painfully learnt.",
+        "price": "8.00",
+        "rating": "4.30",
+        "image_url": "https://m.media-amazon.com/images/I/91XiE+wDUML._AC_.jpg",
         "image": ""
     }
 }
