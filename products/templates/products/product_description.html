@@ -22,11 +22,11 @@
                 <div class="image-container">
                     {% if product.image_url %}
                         <a href="{{ product.image_url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid img_mob_description" src="{{ product.image_url }}" alt="{{ product.name }}">
                         </a>
                     {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid img_mob_description" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
                     {% endif %}
                 </div>

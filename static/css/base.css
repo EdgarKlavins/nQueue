@@ -10988,6 +10988,15 @@ p {
       max-width: 100%; 
       margin: 0 auto; 
   }
+
+  .img_mob_description {
+   margin-left: 70px;
+  }
+
+  .p_name {
+    margin-left: 100px;
+  } 
+  
 }
 
 @media (min-width: 992px) {
@@ -11072,4 +11081,13 @@ p {
 .p_name {
   color: white;
   font-weight: bold;
+  text-align: center;
+}
+
+.custom_price {
+  text-align: center;
+}
+
+.custom_rating {
+  text-align: center;
 }
