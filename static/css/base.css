@@ -11028,3 +11028,30 @@ p {
 .offer {
   color:#b02a37 !important;
 }
+
+.product-image {
+  width: 100%; 
+  height: 200px; 
+  object-fit: contain; 
+}
+
+.custom-title {
+  font-size: 14px;
+  white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Display ellipsis for overflow text */
+}
+
+.card-container {
+  margin-top: 50px; /* Add 50px space from the top */
+  margin-bottom: 20px;
+}
+
+.custom-card {
+  background-color: rgba(47, 23, 15, 0.9);
+}
+
+.custom-body {
+  background-color: rgba(230, 167, 86, 1);
+}
+
