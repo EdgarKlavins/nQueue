@@ -1,0 +1,248 @@
+[
+{
+    "model": "products.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Motivational & Inspirational"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Self-help"
+    }
+},
+{
+    "model": "products.genre",
+    "pk": 4,
+    "fields": {
+        "name": "Spirituality"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 1,
+    "fields": {
+        "year": "1999"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 2,
+    "fields": {
+        "year": "2018"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 3,
+    "fields": {
+        "year": "1997"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 4,
+    "fields": {
+        "year": "1937"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 5,
+    "fields": {
+        "year": "2016"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 6,
+    "fields": {
+        "year": "1989"
+    }
+},
+{
+    "model": "products.year",
+    "pk": 7,
+    "fields": {
+        "year": "2022"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 2,
+    "fields": {
+        "name": "Robin Sharma"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 3,
+    "fields": {
+        "name": "James Clear"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 4,
+    "fields": {
+        "name": "Eckhart Tolle"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 5,
+    "fields": {
+        "name": "Napoleon Hill"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 6,
+    "fields": {
+        "name": "Mark Manson"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 7,
+    "fields": {
+        "name": "Stephen Covey"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 8,
+    "fields": {
+        "name": "Don Miguel Ruiz"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 9,
+    "fields": {
+        "name": "Julie Smith"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "genre": 2,
+        "year": 2,
+        "author": 2,
+        "name": "The 5 AM Club",
+        "description": "Robin Sharma is a globally respected humanitarian. Widely considered one of the world's top leadership and personal optimization advisors, his clients include famed billionaires, professional sports superstars and many Fortune 100 companies. The author's #1 bestsellers, such as the Monk Who Sold His Ferrari, The Greatness Guide and The Leader Who Had No Title are in over 92 languages, making him one of the most broadly read writers alive today.",
+        "price": "3.50",
+        "rating": "4.80",
+        "image_url": "https://books.google.co.uk/books/publisher/content?id=-GWBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70ZhxLF_dijQavjdd-yHdnTlEstPpBCYLrGIwutPmhYXEiBZkHiW7cVI4rwK3FYxEzGusllaJvWULcEtovyJvlXyDTZoPhuDqN-Lh6e_fRJX_cOXtgEcbdoxflZ47VwQH-DGJj6",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "genre": 3,
+        "year": 2,
+        "author": 3,
+        "name": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+        "description": "A supremely practical and useful book. James Clear distils the most fundamental information about habit formation, so you can accomplish more by focusing on less.",
+        "price": "7.40",
+        "rating": "4.60",
+        "image_url": "https://images-eu.ssl-images-amazon.com/images/I/81Ls+SBCLiL._AC_UL232_SR232,232_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "genre": 3,
+        "year": 3,
+        "author": 4,
+        "name": "The Power of Now: A Guide to Spiritual Enlightenment",
+        "description": "The Power of Now: A Guide to Spiritual Enlightenment is a book by Eckhart Tolle. It presents itself as a discussion about how people interact with themselves and others. The concept of self reflection and presence in the moment are presented along with simple exercises for the achievement of its principles.",
+        "price": "9.67",
+        "rating": "4.60",
+        "image_url": "https://m.media-amazon.com/images/I/51idV1yUYCL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "genre": 3,
+        "year": 4,
+        "author": 5,
+        "name": "Think And Grow Rich",
+        "description": "Think and Grow Rich is a book written by Napoleon Hill and Rosa Lee Beeland released in 1937 and promoted as a personal development and self-improvement book. He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie. However, there is no evidence that the two ever met.",
+        "price": "9.82",
+        "rating": "4.20",
+        "image_url": "https://m.media-amazon.com/images/I/41ZjbK1JExL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "genre": 3,
+        "year": 5,
+        "author": 6,
+        "name": "The Subtle Art of Not Giving a F*ck",
+        "description": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life is a 2016 nonfiction self-help book by American blogger and author Mark Manson.",
+        "price": "14.30",
+        "rating": "4.50",
+        "image_url": "https://m.media-amazon.com/images/I/51mN3bY0JjL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "genre": 3,
+        "year": 6,
+        "author": 7,
+        "name": "The 7 Habits of Highly Effective People",
+        "description": "The 7 Habits of Highly Effective People, first published in 1989, is a business and self-help book written by Stephen R. Covey. Covey defines effectiveness as the balance of obtaining desirable results with caring for that which produces those results.",
+        "price": "21.55",
+        "rating": "4.60",
+        "image_url": "https://m.media-amazon.com/images/I/51G4LdDNUGL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "genre": 4,
+        "year": 3,
+        "author": 8,
+        "name": "The Four Agreements: Practical Guide to Personal Freedom",
+        "description": "The Four Agreements: A Practical Guide to Personal Freedom is a self-help book by the author Don Miguel Ruiz. The book outlines a code of conduct based on Toltec teachings that purport to improve one’s life. The book was originally published in 1997 by Amber-Allen publishing in San Rafael, California.",
+        "price": "5.66",
+        "rating": "4.50",
+        "image_url": "https://m.media-amazon.com/images/I/517MwXYNucL._SY445_SX342_.jpg",
+        "image": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "genre": 3,
+        "year": 7,
+        "author": 9,
+        "name": "Why Has Nobody Told Me This Before?",
+        "description": "Why Has Nobody Told Me This Before? is a mental health self-help book by Julie Smith, a British clinical psychologist.",
+        "price": "8.00",
+        "rating": "4.20",
+        "image_url": "https://m.media-amazon.com/images/I/41qCtjp7scL._SY445_SX342_.jpg",
+        "image": ""
+    }
+}
+]
