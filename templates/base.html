@@ -48,7 +48,7 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search for the book">
                             <div class="input-group-append">
                                 <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                     <span class="icon">
@@ -76,10 +76,21 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
                             <a class="dropdown-item" href="{% url 'products' %}">All books</a>
-                            <a class="dropdown-item" href="#">By Genre</a>
                             <a class="dropdown-item" href="#">By Rating</a>
                             <a class="dropdown-item" href="#">By Year</a>
-                            <a class="dropdown-item" href="#">By Author</a>
+                            <a class="dropdown-item" href="#">By Price</a>
+                        </div>
+                    </li>
+                    <li class="nav-item px-lg-4 dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Genre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
+                            <a class="dropdown-item" href="{% url 'products' %}?genre=Motivational%20%26%20Inspirational">Motivational & Inspirational</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?genre=Self-help">Self-help</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?genre=Spirituality">Spirituality</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?genre=Personal finance">Financial</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?genre=Biography">Biography</a>
                         </div>
                     </li>
                     <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Best Sellers</a></li>
