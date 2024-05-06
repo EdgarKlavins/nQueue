@@ -8049,7 +8049,7 @@ textarea.form-control-lg {
 
 .text-info {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
+  color: #ffc107 !important;
 }
 
 .text-warning {
@@ -11100,4 +11100,24 @@ p {
 
 .add_to_bag_btn {
   margin-bottom: 100px;
+}
+
+.bag_headers {
+  color: #E6A756;
+}
+
+.bag_p {
+  color:white;
+}
+
+.bag_logo{
+  color: #E6A756;
+}
+
+.bag_total {
+  color: white;
+}
+
+.text-right {
+  padding-bottom: 100px !important;
 }
