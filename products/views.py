@@ -15,6 +15,8 @@ def all_products(request):
 
     if request.GET:
 
+        
+        
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -24,11 +26,15 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             elif sortkey == 'year':
                 sortkey = '-year' if 'direction' in request.GET and request.GET['direction'] == 'desc' else 'year'
+            elif sortkey == 'rating':
+                 sortkey = '-rating' if 'direction' in request.GET and request.GET['direction'] == 'desc' else 'rating'
+
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
 
             products = products.order_by(sortkey)
+            
 
         if 'genre' in request.GET:
             genre = request.GET.get('genre').split(',')
