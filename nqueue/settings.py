@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-earhrn2ge-o2et0shwz!e%@@i&e2gy1&jf_=3q*go4#1w58xv*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-edgarklavins-nqueue-i0cm3ot1aqc.ws-eu111.gitpod.io']
+ALLOWED_HOSTS = [ '8000-edgarklavins-nqueue-k166mtog7io.ws-eu111.gitpod.io']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',
             ],
         },
     },
@@ -157,7 +159,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+FREE_DELIVERY_THRESHOLD = 15
+STANDARD_DELIVERY_PERCENTAGE = 8
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

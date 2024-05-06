@@ -111,7 +111,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
@@ -151,9 +151,9 @@
             <div class="row">
                 <div class="col-xl-9 mx-auto">
                     <div class="cta-inner bg-faded text-center rounded">
-                        <h4>“Your greatness is limited only by the investments you make in yourself.”  Grant Cardone</h4>
+                        <h5>“Your greatness is limited only by the investments you make in yourself.”  Grant Cardone</h5>
                         <br>
-                        <p class="offer"><strong>Same day delivery in Birmingham, if you order before 14:00. Free delivery on orders above £15</strong></p>
+                        <h4 class="offer"><strong>Same day delivery in Birmingham, if you order before 14:00. Free delivery on orders above £{{ free_delivery_threshold }}</strong></h4>
                     </div>
                 </div>
             </div>
