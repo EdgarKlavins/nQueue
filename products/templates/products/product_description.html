@@ -2,46 +2,64 @@
 {% load static %}
 
 {% block styles %}
-    <style>
-        
-        .image-container img {
-            width: 50%;
-            height: auto;
-        }
-
-    
-        
-    </style>
+<style>
+    .image-container img {
+        width: 50%;
+        height: auto;
+    }
+</style>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container">
-                    {% if product.image_url %}
-                        <a href="{{ product.image_url }}" target="_blank">
-                            <img class="card-img-top img-fluid img_mob_description" src="{{ product.image_url }}" alt="{{ product.name }}">
-                        </a>
-                    {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid img_mob_description" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        </a>
-                    {% endif %}
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <p class="p_name">{{ product.name }}</p>
-                    <p class="description_p">{{ product.description }}</p>
-                    <p class="description_p">{{ product.genre }}</p>
-                    <p class="description_p">Price: £ {{ product.price }}</p>
-                    <p class="description_p">Year: {{ product.year }}</p>
-                    <p class="description_p">Rating: <i class="fas fa-star mr-1" style="color: gold !important;"></i>{{ product.rating }} / 5</p>
-                </div>
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container">
+                {% if product.image_url %}
+                <a href="{{ product.image_url }}" target="_blank">
+                    <img class="card-img-top img-fluid img_mob_description" src="{{ product.image_url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid img_mob_description" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
             </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <p class="p_name">{{ product.name }}</p>
+                <p class="description_p">{{ product.description }}</p>
+                <p class="description_p">{{ product.genre }}</p>
+                <p class="description_p">Price: £ {{ product.price }}</p>
+                <p class="description_p">Year: {{ product.year }}</p>
+                <p class="description_p">Rating: <i class="fas fa-star mr-1" style="color: gold !important;"></i>{{ product.rating }} / 5</p>
+                <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="mt-3"><strong>Quantity:</strong></p>
+                            <div class="form-group w-50">
+                                <div class="input-group">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 add_to_bag_btn">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                        </div>
+                    </div>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </form>
+           </div>
+        </div>
     </div>
+</div>
 {% endblock %}
-

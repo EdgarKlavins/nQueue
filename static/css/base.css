@@ -11097,3 +11097,7 @@ p {
   bottom: 0;
   width: 100%;
 }
+
+.add_to_bag_btn {
+  margin-bottom: 100px;
+}
