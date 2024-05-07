@@ -11122,3 +11122,11 @@ p {
   padding-bottom: 100px !important;
   padding-left: 20px !important;
 }
+
+.bag_empty{
+  color: white !important;
+}
+
+.pr_description{
+  color: white !important;
+}
