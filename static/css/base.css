@@ -10830,6 +10830,12 @@ body {
   background-size: cover;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+  cursor: pointer;
+}
+
 p {
   line-height: 1.75;
 }
