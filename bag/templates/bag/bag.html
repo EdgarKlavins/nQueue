@@ -12,17 +12,17 @@
 
 {% block content %}  
    <div class="overlay"></div>
-   <div class="container mb-2">
+   <div class="container bag_container">
         <div class="row">
             <div class="col"></div>
                 <hr>
-                <h2 class="bag_logo">Shopping Bag</h2>
+                <h1 class="bag_logo">Shopping Bag</h1>
                 <hr>
             
             </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col bag_containers">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -32,7 +32,6 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col"></th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
@@ -42,13 +41,14 @@
                                     <td class="p-3 w-25">
                                         <img class="img-fluid rounded" src="{{ item.product.image_url }}">
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-3 w-15">
                                         <p class="bag_p"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="bag_p"><i class="fas fa-star mr-1" style="color: gold !important;"></i>{{ item.product.rating }} / 5</p>
                                         
                                     </td>
                                     
                                     
-                                    <td class="py-3 w-25">
+                                    <td class="py-3 w-15">
                                         <p class="bag_p">{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-15">
@@ -94,7 +94,7 @@
                                     <h6 class="bag_total">Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="bag_total"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
+                                        <p class="mb-1 text-danger spend_more">
                                             You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
                                         </p>
                                     {% endif %}
