@@ -270,7 +270,8 @@
         "price": "3.50",
         "rating": "4.80",
         "image_url": "https://m.media-amazon.com/images/I/41alUjROZ5L._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -285,7 +286,8 @@
         "price": "7.40",
         "rating": "4.60",
         "image_url": "https://m.media-amazon.com/images/I/41E0EMHIKpL._SX342_SY445_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -300,7 +302,8 @@
         "price": "9.67",
         "rating": "4.60",
         "image_url": "https://m.media-amazon.com/images/I/51idV1yUYCL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -315,7 +318,8 @@
         "price": "9.82",
         "rating": "4.20",
         "image_url": "https://m.media-amazon.com/images/I/41ZjbK1JExL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": true
     }
 },
 {
@@ -330,7 +334,8 @@
         "price": "14.30",
         "rating": "4.50",
         "image_url": "https://m.media-amazon.com/images/I/51mN3bY0JjL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": true
     }
 },
 {
@@ -345,7 +350,8 @@
         "price": "21.55",
         "rating": "4.60",
         "image_url": "https://m.media-amazon.com/images/I/51G4LdDNUGL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": true
     }
 },
 {
@@ -360,7 +366,8 @@
         "price": "5.66",
         "rating": "4.50",
         "image_url": "https://m.media-amazon.com/images/I/517MwXYNucL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -375,7 +382,8 @@
         "price": "8.00",
         "rating": "4.20",
         "image_url": "https://m.media-amazon.com/images/I/41qCtjp7scL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -390,7 +398,8 @@
         "price": "10.49",
         "rating": "4.40",
         "image_url": "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -405,7 +414,8 @@
         "price": "8.28",
         "rating": "4.40",
         "image_url": "https://m.media-amazon.com/images/I/41IhmDI07KL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -420,7 +430,8 @@
         "price": "15.69",
         "rating": "4.60",
         "image_url": "https://m.media-amazon.com/images/I/414DrcAE4-S._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -435,7 +446,8 @@
         "price": "7.39",
         "rating": "4.50",
         "image_url": "https://m.media-amazon.com/images/I/418jzUm2ZZL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -450,7 +462,8 @@
         "price": "10.35",
         "rating": "4.50",
         "image_url": "https://m.media-amazon.com/images/I/41ALfsawZDL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -465,7 +478,8 @@
         "price": "11.45",
         "rating": "4.60",
         "image_url": "https://m.media-amazon.com/images/I/31RW8HQ31WL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -480,7 +494,8 @@
         "price": "9.11",
         "rating": "4.50",
         "image_url": "https://m.media-amazon.com/images/I/41MJc+8fkyL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -495,7 +510,8 @@
         "price": "6.64",
         "rating": "4.70",
         "image_url": "https://m.media-amazon.com/images/I/414ABVOJ5ZL._SY445_SX342_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 },
 {
@@ -510,7 +526,8 @@
         "price": "8.00",
         "rating": "4.30",
         "image_url": "https://m.media-amazon.com/images/I/91XiE+wDUML._AC_.jpg",
-        "image": ""
+        "image": "",
+        "best_seller": false
     }
 }
 ]

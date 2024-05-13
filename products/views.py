@@ -12,6 +12,7 @@ def all_products(request):
     genre = None
     sort = None
     direction = None
+    best_sellers = False
 
     if request.GET:
 
@@ -52,6 +53,12 @@ def all_products(request):
 
             if not products.exists():
                 messages.warning(request, "No products found matching the search criteria.")
+        
+
+        if 'best_seller' in request.GET and request.GET['best_seller'] == 'true':
+            products = products.filter(best_seller=True)
+            best_sellers = True
+
 
     current_sorting = f'{sort}_{direction}'
 
@@ -60,6 +67,7 @@ def all_products(request):
         'search_term': query,
         'current_genre': genre,
         'current_sorting': current_sorting,
+        'best_sellers': best_sellers,
     }
 
     return render(request, 'products/products.html', context)
