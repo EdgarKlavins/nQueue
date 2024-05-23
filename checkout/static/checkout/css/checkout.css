@@ -74,3 +74,32 @@
 .text-danger {
   color: #f1ee07 !important;
 }
+
+.border {
+  
+  border-width: 2px;
+  
+}
+
+.order-confirmation-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(36, 19, 19, 0.61); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.order-confirmation-wrapper > * {
+  position: relative;
+  z-index: 2;
+}
+
+.order-separator {
+  border: 0;
+  height: 1px;
+  background: #ccc; /* Adjust color as needed */
+  margin: 20px 0; /* Adjust spacing as needed */
+}
