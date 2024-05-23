@@ -7902,7 +7902,8 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: rgba(230, 167, 86, 1) !important;
+  font-weight: 600;
 }
 
 .text-black-50 {
@@ -11021,4 +11022,9 @@ body {
 
 .arrow-dark {
   border-bottom-color: #343a40 !important;
+}
+
+.special_text {
+  color: rgba(230, 167, 86, 1);
+  font-weight: 500;
 }
