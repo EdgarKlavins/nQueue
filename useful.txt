@@ -3,3 +3,5 @@ python3 manage.py runserver
 python manage.py migrate
 python3 manage.py createsuperuser
 python3 manage.py dumpdata products --indent 4 > products/fixtures/products.json
+export STRIPE_PUBLIC_KEY=pk_test_51PJceLDlpOACMTtH7AJC8NnoMmBjTpfI7hYGKydx1Ae2TbMOfk8Fu08T7wdW6bVsHPFs8TthTk6sLTBjYhNwuLHo00X5tByMRM
+export STRIPE_SECRET_KEY=
