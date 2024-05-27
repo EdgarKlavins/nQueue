@@ -11025,3 +11025,7 @@ body {
   font-weight: 500;
 }
 
+.admin_text {
+  color: red;
+  text-align: center;
+}

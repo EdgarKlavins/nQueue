@@ -18,7 +18,12 @@
                                     <h5 class="card-title custom-title text-center" style="font-weight: bold;">{{ product.name }}</h5>
                                     <p class="card-text custom_price">Price: £{{ product.price }}</p>
                                     <small class="card-text d-block text-center"><i class="fas fa-star mr-1" style="color: gold !important;"></i>{{ product.rating }} / 5</small>
-                                    <!-- Add more details about the product as needed -->
+                                    {% if request.user.is_superuser %}
+                                        <small class="ml-3 admin_text">
+                                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        </small>
+                                   {% endif %}
                                 </div>
                             </div>
                         </div>
