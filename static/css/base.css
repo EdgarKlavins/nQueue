@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 hr {
@@ -6857,9 +6866,8 @@ textarea.form-control-lg {
   box-shadow: none !important;
 }
 
-.position-static {
-  position: static !important;
-}
+
+
 
 .position-relative {
   position: relative !important;
@@ -10719,6 +10727,11 @@ p {
   box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
 }
 
+.btn-outline-black:hover,
+.btn-black:hover {
+    color: white;
+}
+
 @media (min-width: 992px) {
   .about-heading .about-heading-img {
     position: relative;
@@ -10732,8 +10745,6 @@ p {
 }
 
 .cta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background-color: rgba(47, 23, 15, 0.9);
 }
 .cta .cta-inner {
@@ -10844,7 +10855,9 @@ body {
   font-size: 1.2rem;
 }
 
-
+.signup label {
+  color: white;
+}
 
 .offer {
   color:#b02a37 !important;
@@ -10896,11 +10909,18 @@ body {
   text-align: center;
 }
 
-.footer {
-  
+footer {
+  position: relative;
   bottom: 0;
   width: 100%;
 }
+
+.footer .d-flex {
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  display: flex;
+}
+
 
 .add_to_bag_btn {
   margin-bottom: 100px;
@@ -10923,6 +10943,10 @@ body {
   padding-bottom: 100px;
   text-align: center;
   
+}
+
+.custom-icon {
+  color: rgba(230, 167, 86, 1);
 }
 
 
@@ -10971,6 +10995,8 @@ body {
 
 .custom-toast {
   overflow:visible;
+  overflow-y: auto;
+  max-height: 60vh;
 }
 
 .toast-capper {
@@ -11029,3 +11055,4 @@ body {
   color: red;
   text-align: center;
 }
+

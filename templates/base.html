@@ -32,8 +32,8 @@
 
           <title>Nqueue - Save your time save your money {% block extra_title %}{% endblock %} </title>
   </head>
-  <body>
-     <header>
+  <body class="d-flex flex-column min-vh-100">
+       <header>
                 <h1 class="site-heading text-center text-faded d-none d-lg-block">
                     <span class="site-heading-upper text-primary mb-3">nQueue - Personal Development Books</span>
                     <span class="site-heading-lower">Invest in yourself</span>
@@ -155,11 +155,38 @@
                     </div>
                 </section>
                 {% endblock %}
-
-            <footer class="footer text-faded text-center py-5">
-                <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
-            </footer>
-     </header>
+       </header>
+       <main class="flex-grow-1">
+            {% block body %}
+            {% endblock %}
+       </main>
+        <footer class="footer py-3 mt-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-lg-end text-end my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Nqueue 2024. Educational purposes only.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center my-auto">
+                        <ul class="list-inline mb-0 d-flex justify-content-lg-start">
+                            <li class="list-inline-item me-4">
+                                <a href="#"><i class="fab fa-facebook fa-2x fa-fw custom-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#"><i class="fab fa-twitter-square fa-2x fa-fw custom-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-instagram fa-2x fa-fw custom-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-github fa-2x fa-fw custom-icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        
         
      {% if messages %}
         <div class="message-container">
@@ -187,6 +214,5 @@
             $('.toast').toast('show');
         </script>
         {% endblock %}
-    
-  </body>
+    </body>
 </html>

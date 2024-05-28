@@ -30,3 +30,7 @@ th {
 td {
     color: gold;
 }
+
+.special_button {
+    margin-bottom: 20px;
+}
