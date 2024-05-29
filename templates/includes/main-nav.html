@@ -1,0 +1,62 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home' %}">Home</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Books
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a class="dropdown-item" href="{% url 'products' %}">All books</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+                <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genre
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Motivational%20%26%20Inspirational">Motivational & Inspirational</a>
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Self-help">Self-help</a>
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Spirituality">Spirituality</a>
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Personal finance">Financial</a>
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Biography">Biography</a>
+            </div>
+        </li>
+
+        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'products' %}?best_seller=true">Best Sellers</a></li>
+            
+        <li class="nav-item px-lg-4 dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </div>
+        </li>
+        <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                <div class="text-center">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                        {% if grand_total %}
+                        £{{ grand_total|floatformat:2 }}
+                        {% else %}
+                            £0.00
+                        {% endif %}
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
