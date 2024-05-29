@@ -1,1 +1,1 @@
-web: gunicorn nqueuebookstore.wsgi:application
+web: gunicorn nqueue.wsgi:application
