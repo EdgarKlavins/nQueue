@@ -10805,7 +10805,12 @@ body {
     position: absolute;
     bottom: -2rem;
   }
+  .mob_card {
+    margin-top: 60px;
+  }
 }
+
+
 @media (min-width: 1200px) {
   .intro .intro-text {
     width: 45%;
@@ -10823,9 +10828,17 @@ body {
    margin-left: 70px;
   }
 
-  .p_name {
-    margin-left: 100px;
-  } 
+  .mob_container {
+    padding-top: 75px;
+  }
+
+  .search_bar {
+    margin-top: 40px;
+  }
+
+  .mob_card {
+    margin-top: 30px;
+  }
   
 }
 
