@@ -117,6 +117,11 @@ The main purpose of this project is to create a full stack website with django i
 [Books page](docs/README/wireframes/Products.png)
 
 
+3. **Product desciption** displays details of the products, gives option to add to bag.
+
+[Details page](docs/README/wireframes/description.png)
+
+
 
 
 

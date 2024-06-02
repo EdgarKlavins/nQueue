@@ -10793,6 +10793,11 @@ body {
     width: 75%;
     float: right;
   }
+
+  .special_li {
+    padding-top: 15px;
+  }
+  
   .intro .intro-text {
     left: 0;
     width: 60%;
