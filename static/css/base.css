@@ -10826,6 +10826,10 @@ body {
     margin-left: 200px;
   }
 
+  .special_li {
+    padding-top: 15px;
+  }
+
   .bag_logo {
     margin-left: 250px;
   }

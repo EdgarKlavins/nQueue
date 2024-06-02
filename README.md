@@ -109,12 +109,12 @@ The main purpose of this project is to create a full stack website with django i
 
 1. **Home page** displays the introduction and purpose of the website.
 
-[Home page](documentation/readme/Home.png)
+[Home page](docs/README/wireframes/homew.png)
 
 
-4. **Register page** provides registry form.
+2. **Books** displays list of products.
 
-[Register page](documentation/readme/Register.png)
+[Books page](docs/README/wireframes/Products.png)
 
 
 
