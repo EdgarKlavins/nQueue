@@ -1,110 +1,125 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# nQueue
 
-Welcome EdgarKlavins,
+## Milestone Project 4 - Full Stack Development
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<h2 align="center"><img src="docs/README/responsive.png"></h2>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+* My milestone Project 4 is a fully functional online bookstore dedicated exclusively to self-development books. This fictional e-commerce platform offers a wide selection of titles focused on personal growth, mental wellness, productivity, and motivation. The store provides an intuitive and seamless shopping experience, allowing users to browse, search, and purchase books effortlessly.
 
-## Gitpod Reminders
+## Live Project
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[View the live project here.](https://nqueuebookstore-234df69c8477.herokuapp.com/)
 
-`python3 -m http.server`
+## Repository
 
-A blue button should appear to click: _Make Public_,
+[Find the project repository here.](https://github.com/EdgarKlavins/nQueue)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# UX
 
-A blue button should appear to click: _Make Public_,
+### Desciption
 
-Another blue button should appear to click: _Open Browser_.
+The main purpose of this project is to create a full stack website with django including stripe payments, designed to browse, search and buy books.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Project Goals
+<ul>
+    <li>To design and build a realworld Full Stack MVC application with a Front end</li>
+    <li>To implement simple and clean design that is easy to navigate
+    and allows the user to find information and resources intuitively.
+    </li>
+    <li>Where the purpose is immediately evident to a new user</li>
+    <li>Which provides a good solution to the user’s demands and expectations</li>
+    <li>To create a good looking website that responds correctly on all device sizes.</li>
+    <li>A website that has user authentication</li>
+    <li>A website that has user uuthorization</li>
+    <li>A website is providing CRUD operations where all data (CRUD)
+    actions are immediately reflected in the user interface.
+    </li>
+    <li>A website which is linked to external database</li>
+    <li>Configure the project efficiently through wellkept Procfile, requirements.txt file,
+    settings files, keeping the data store configuration in a single location where it can be changed easily.
+    </li>
+    <li> Fully describe the data schema in the project README file.</li>
+    <li> Demonstrate solid understanding of Django template syntax, logic and usage</li>
+    <li> Use version control software effectively to provide a record of the development process.</li>
+</ul>
+<br>
 
-To log into the Heroku toolbelt CLI:
+## User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### As a Customer:
+1. **Account Creation:**
+   - As a customer, I want to create an account so that I can manage my orders and personal information.
+   
+2. **Login and Logout:**
+   - As a customer, I want to log in to my account so that I can access my personal dashboard and order history.
+   - As a customer, I want to log out of my account so that my personal information remains secure.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+3. **Browse Books:**
+   - As a customer, I want to browse through the book categories so that I can find books that interest me.
+   
+4. **Search Books:**
+   - As a customer, I want to search for books by title, author, or keyword so that I can quickly find specific books I am looking for.
+   
+5. **Book Details:**
+   - As a customer, I want to view detailed information about a book, including its description, author, and ratings, so that I can make an informed purchase decision.
+   
+6. **Add to Cart:**
+   - As a customer, I want to add books to my shopping cart so that I can purchase multiple items at once.
+   
+7. **Manage Cart:**
+   - As a customer, I want to view, update, and remove items from my shopping cart so that I can manage my intended purchases.
+   
+8. **Checkout:**
+   - As a customer, I want to securely enter my payment information and complete the purchase process so that I can buy the books I want.
+   
+9. **Order Confirmation:**
+   - As a customer, I want to receive an order confirmation email so that I have a record of my purchase.
 
-------
+10. **Order History:**
+    - As a customer, I want to view my past orders so that I can keep track of my purchases.
 
-## Release History
+### As a Visitor:
+1. **Explore Website:**
+   - As a visitor, I want to browse the website without creating an account so that I can explore the available books.
+   
+2. **Search Books:**
+   - As a visitor, I want to search for books by title, author, or keyword so that I can find books that interest me.
+   
+3. **Book Details:**
+   - As a visitor, I want to view detailed information about a book so that I can learn more about it before deciding to purchase.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+4. **Create an Account:**
+   - As a visitor, I want to create an account so that I can save my favorite books and make future purchases.
 
-**September 20 2023:** Update Python version to 3.9.17.
+### As a Site Owner:
+1. **Manage Books:**
+   - As a site owner, I want to add, update, and remove books from the catalog so that I can keep the inventory current and accurate.
+   
+2. **View Orders:**
+   - As a site owner, I want to view customer orders so that I can fulfill them efficiently.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+3. **Manage Users:**
+   - As a site owner, I want to manage user accounts, including registration and permissions, so that I can maintain the security and integrity of the site.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Design
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Wireframes
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+1. **Home page** displays the introduction and purpose of the website.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[Home page](documentation/readme/Home.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+4. **Register page** provides registry form.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[Register page](documentation/readme/Register.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
