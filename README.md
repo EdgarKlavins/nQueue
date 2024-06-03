@@ -602,6 +602,64 @@ The main purpose of this project is to create a full stack website with django i
 
        <h2 align="center"><img src="docs/README/Database.png"></h2>
 
+   <br>
+
+ # Technologies Used
+
+ ## Languages Used
+
+ - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+ - [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+ - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+ - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+ - [Django template language](https://docs.djangoproject.com/en/5.0/ref/templates/language/)
+
+ - [Boostrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+ <br>
+
+ ## Libraries & Tools 
+
+
+ - [Ignore X-Frame headers](https://microsoftedge.microsoft.com/) to properly display my website in Am I Responsive mock-up
+ - [Am I Responsive](http://ami.responsivedesign.is/) was usedfor creating the multi-device mock-up at the top of this README.md file
+ - [Bootstrap 4.2](https://getbootstrap.com/). This project uses the Bootstrap library for UI components (Buttons, Card, Footer, Modal, Navbar)
+ - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/) used for debugging and checking site for responsiveness
+ - [Git](https://git-scm.com/)  used for version control within Gitpod to push the code to GitHub
+ - [GitHub](https://github.com/) was used as a remote repository to store the project 
+ - [Google Fonts](https://fonts.google.com/) - for typography.
+ - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templating language I've used to connect my html files.
+ - [Font awesome](https://fontawesome.com/) - For icons across the website
+ - [jQuery](https://jquery.com/)- to add functionality to Bootstrap, stripe and other scripts.
+ - [Paint](https://www.microsoft.com/en-us/windows/paint)- to edit, update, crop pictures
+ - [Balsamiq](https://balsamiq.com/)- I used to create Wireframes
+ - [dbdiagram](https://dbdiagram.io/)- Tool I used to create database structure diagram.
+
+ <br>
+
+
+ ## Payments 
+
+ - [Stripe](https://stripe.com/gb) - To handle website payments.
+
+ <br>
+
+
+ ## Testing & Code Validation
+
+ - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+ - [Python Linting on Gitpod](https://open-vsx.org/extension/ms-python/python)
+ - [JSHint](https://jshint.com/)
+ - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+ - [W3C Markup Validation Service](https://validator.w3.org/)
+
+
+
+
      
 
  
