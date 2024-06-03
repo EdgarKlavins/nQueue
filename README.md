@@ -196,13 +196,38 @@ The main purpose of this project is to create a full stack website with django i
 
  ### Header 
 
+  <details>
+    <summary style="color: #FFFFFF;"><b>See Header</b></summary>
+
+   ![Header](docs/README/Header.png)
+   
+  </details>
+
+  <br>
+ 
  The header sets the tone and branding of the website containing:
 
   * Main Title: Displays "nQueue - Personal Development Books", reinforcing the website's focus.
   * Tagline: "Invest in yourself", encouraging users to see the value in personal development books.
   * Search Bar, features an input field and a search button styled to match the site's design and allows users to search for books by entering keywords.
 
+  <details>
+    <summary style="color: #FFFFFF;"><b>See Search bar</b></summary>
+
+   ![Search bar](docs/README/searchbar.png)
+   
+  </details>
+  <br>
+
  ### Navigation Bar
+
+ <details>
+    <summary style="color: #FFFFFF;"><b>See Navigation bar</b></summary>
+
+   ![Search bar](docs/README/navbar.png)
+   
+  </details>
+  <br>
 
  The navigation bar provides a user-friendly, responsive  interface to navigate through the website and contain:
   
@@ -210,11 +235,26 @@ The main purpose of this project is to create a full stack website with django i
 
   * Books, dropdown menu that offers several options:
 
+      <details>
+         <summary style="color: #FFFFFF;"><b>See Books dropdown menu</b></summary>
+
+      ![Search bar](docs/README/books_nav.png)
+         
+      </details>
+  
+
      *  All Books: Links to a page displaying all available books.
      *  By Rating: Sorts and displays books by their rating in descending order, helping users find the highest-rated books.
      *  By Price: Sorts and displays books by their price in ascending order, assisting users in finding budget-friendly options.
 
    * Genre, dropdown menu categorizing books into different genres:
+
+       <details>
+         <summary style="color: #FFFFFF;"><b>See Genre dropdown menu</b></summary>
+
+      ![Search bar](docs/README/genre_nav.png)
+         
+      </details>
       
      * Motivational & Inspirational: Links to books that inspire and motivate.
      * Self-help: Links to books focusing on personal development and self-improvement.
@@ -226,21 +266,54 @@ The main purpose of this project is to create a full stack website with django i
 
    * My Account, dropdown menu that changes based on the user's authentication status
      * Authenticated Users:
+         <details>
+         <summary style="color: #FFFFFF;"><b>See My account dropdown menu</b></summary>
+
+          ![Search bar](docs/README/myaccountun.png)
+          ![Search bar](docs/README/myaccountadm.png)
+         
+          </details>
 
         * Product Management: Available only for superusers, linking to a page where products can be managed (added, edited, deleted).
         * My Profile: Links to the user’s profile page, allowing them to view and edit their personal information.
         * Logout: Provides a logout option to end the user's session.
 
      * Unauthenticated Users:
+         <details>
+         <summary style="color: #FFFFFF;"><b>See My account dropdown menu</b></summary>
+
+          
+          ![Search bar](docs/README/myaccountunn.png)
+         
+          </details>
+
         * Register: Links to the registration page for new users to sign up.
         * Login: Links to the login page for existing users to access their accounts.
 
    * Shopping Bag, a dynamic link displaying the total cost of items in the user’s shopping bag. Including:
+      <details>
+      <summary style="color: #FFFFFF;"><b>See Shoping bag</b></summary>
+
+            
+      ![Search bar](docs/README/shopinbag.png)
+            
+      </details>
 
       * Shopping Bag Icon: visual indicator of the shopping bag.
       * Total Amount: shows the current total price of the items in the bag.
       * Links to the shopping bag page where users can view and manage their selected items.
- 
+
+      <br>
+
+ ### Homepage Content
+
+   * Introductory Section:
+       * Includes a visually appealing image and motivational quotes.
+       * Features a prominent button linking to the best sellers page.
+
+   * Call-to-Action Section:
+       * Highlights key benefits such as same-day delivery in Birmingham for orders placed before 14:00 and free delivery on orders above a specified threshold.
+       
 
  
 
