@@ -102,6 +102,7 @@ The main purpose of this project is to create a full stack website with django i
 3. **Manage Users:**
    - As a site owner, I want to manage user accounts, including registration and permissions, so that I can maintain the security and integrity of the site.
 
+<br>
 
 ## Design
 
@@ -120,6 +121,44 @@ The main purpose of this project is to create a full stack website with django i
 3. **Product desciption** displays details of the products, gives option to add to bag.
 
 [Details page](docs/README/wireframes/description.png)
+
+4. **Shopping bag** displays details of the products, gives option to add to bag.
+
+[Shoping bag](docs/README/wireframes/Shoping_bag.png)
+
+<br>
+
+
+### Colour Scheme
+
+- For my project I used a  colour scheme of warm browns, greys and yellows. I chosed colors to match the main bacground theme with books.
+
+
+
+<h2 align="center"><img src="docs/README/colordesign.png"></h2>
+
+<br>
+
+
+### Typography
+
+- As Google fonts I have picked two fonts.
+
+ 
+
+ 1.  <h2 align="center"><img src="docs/README/Font1.png"></h2>
+
+
+ 2. <h2 align="center"><img src="docs/README/Font2.png"></h2>
+
+
+
+ <br>
+
+ ### Imagery 
+
+
+
 
 
 
