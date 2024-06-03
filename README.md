@@ -4,7 +4,7 @@
 
 <h2 align="center"><img src="docs/README/responsive.png"></h2>
 
-* My milestone Project 4 is a fully functional online bookstore dedicated exclusively to self-development books. This fictional e-commerce platform offers a wide selection of titles focused on personal growth, mental wellness, productivity, and motivation. The store provides an intuitive and seamless shopping experience, allowing users to browse, search, and purchase books effortlessly.
+My milestone Project 4 is a fully functional online bookstore dedicated exclusively to self-development books. This fictional e-commerce platform offers a wide selection of titles focused on personal growth, mental wellness, productivity, and motivation. The store provides an intuitive and seamless shopping experience, allowing users to browse, search, and purchase books effortlessly.
 
 ## Live Project
 
@@ -106,43 +106,43 @@ The main purpose of this project is to create a full stack website with django i
 
 ## Design
 
-### Wireframes
+   ### Wireframes
 
-1. **Home page** displays the introduction and purpose of the website.
+   1. **Home page** displays the introduction and purpose of the website.
 
-[Home page](docs/README/wireframes/homew.png)
-
-
-2. **Books** displays list of products.
-
-[Books page](docs/README/wireframes/Products.png)
+   [Home page](docs/README/wireframes/homew.png)
 
 
-3. **Product desciption** displays details of the products, gives option to add to bag.
+   2. **Books** displays list of products.
 
-[Details page](docs/README/wireframes/description.png)
-
-4. **Shopping bag** displays details of the products, gives option to add to bag.
-
-[Shoping bag](docs/README/wireframes/Shoping_bag.png)
-
-<br>
+   [Books page](docs/README/wireframes/Products.png)
 
 
-### Colour Scheme
+   3. **Product desciption** displays details of the products, gives option to add to bag.
 
-- For my project I used a  colour scheme of warm browns, greys and yellows. I chosed colors to match the main bacground theme with books.
+   [Details page](docs/README/wireframes/description.png)
+
+   4. **Shopping bag** displays details of the products, gives option to add to bag.
+
+   [Shoping bag](docs/README/wireframes/Shoping_bag.png)
+
+ <br>
+
+
+ ### Colour Scheme
+
+ - For my project I used a  colour scheme of warm browns, greys and yellows. I chosed colors to match the main bacground theme with books.
 
 
 
-<h2 align="center"><img src="docs/README/colordesign.png"></h2>
+ <h2 align="center"><img src="docs/README/colordesign.png"></h2>
 
-<br>
+ <br>
 
 
-### Typography
+ ### Typography
 
-- As Google fonts I have picked two fonts.
+ - As Google fonts I have picked two fonts.
 
  
 
@@ -155,12 +155,94 @@ The main purpose of this project is to create a full stack website with django i
 
  <br>
 
+
  ### Imagery 
 
 
+ For my main bacground image, to create smart, classical atmosphere, I used Old Vintage Bookshelf from https://www.freepik.com/
+
+ <h2 align="center"><img src="media/background.jpg"></h2>
+
+ And open book image at my homepage from https://www.shutterstock.com/
+
+ <h4 align="center"><img src="media/book5.jpg" width="1000" height="800"></h4>
 
 
+ Rest of images for my product list are takken directly from www.amazon.co.uk books as url_images.
 
+ <br>
+
+ ### Icons
+
+ All icons through out the website are imported from Font Awesome
+
+ #### Main Navigation
+
+ * Search Icon: Used in the search bar within the header section.
+ * Shopping Bag Icon: Displayed in the navigation bar to represent the shopping bag.
+ * Footer section for Facebook profile, LinkedIn profile,  Instagram profile and GitHub profile
+
+ #### Bag
+
+ * Star Icon: Displayed next to product ratings.
+ * Minus and Plus Icon: Used in the decrement and increment quantity button.
+ * Chevron Left Icon: Used in the "Keep Shopping" button. 
+ * Lock Icon: Used in the "Secure Checkout" button. 
+
+ <br>
+
+# Features
+
+
+ ### Header 
+
+ The header sets the tone and branding of the website containing:
+
+  * Main Title: Displays "nQueue - Personal Development Books", reinforcing the website's focus.
+  * Tagline: "Invest in yourself", encouraging users to see the value in personal development books.
+  * Search Bar, features an input field and a search button styled to match the site's design and allows users to search for books by entering keywords.
+
+ ### Navigation Bar
+
+ The navigation bar provides a user-friendly, responsive  interface to navigate through the website and contain:
+  
+  * Home, which links directly to the homepage, allowing users to easily return to the starting point of the website.
+
+  * Books, dropdown menu that offers several options:
+
+     *  All Books: Links to a page displaying all available books.
+     *  By Rating: Sorts and displays books by their rating in descending order, helping users find the highest-rated books.
+     *  By Price: Sorts and displays books by their price in ascending order, assisting users in finding budget-friendly options.
+
+   * Genre, dropdown menu categorizing books into different genres:
+      
+     * Motivational & Inspirational: Links to books that inspire and motivate.
+     * Self-help: Links to books focusing on personal development and self-improvement.
+     * Spirituality: Links to books exploring spiritual topics.
+     * Personal Finance: Links to books providing financial advice and strategies.
+     * Biography: Links to biographies of influential individuals.
+
+   * Best Sellers, direct link to a page showcasing the best-selling books, helping users quickly find popular and recommended reads.
+
+   * My Account, dropdown menu that changes based on the user's authentication status
+     * Authenticated Users:
+
+        * Product Management: Available only for superusers, linking to a page where products can be managed (added, edited, deleted).
+        * My Profile: Links to the user’s profile page, allowing them to view and edit their personal information.
+        * Logout: Provides a logout option to end the user's session.
+
+     * Unauthenticated Users:
+        * Register: Links to the registration page for new users to sign up.
+        * Login: Links to the login page for existing users to access their accounts.
+
+   * Shopping Bag, a dynamic link displaying the total cost of items in the user’s shopping bag. Including:
+
+      * Shopping Bag Icon: visual indicator of the shopping bag.
+      * Total Amount: shows the current total price of the items in the bag.
+      * Links to the shopping bag page where users can view and manage their selected items.
+ 
+
+ 
 
 
 
