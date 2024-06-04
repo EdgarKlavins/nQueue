@@ -2,7 +2,7 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item px-lg-4 d-flex align-items-center"><a class="nav-link text-uppercase" href="{% url 'home' %}">Home</a></li>
         <li class="nav-item px-lg-4 dropdown d-flex align-items-center">
-            <a id="books" class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownBooks" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="books" class="nav-link text-uppercase dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="books">
@@ -13,14 +13,14 @@
         </li>
 
         <li class="nav-item px-lg-4 dropdown d-flex align-items-center">
-            <a id="genre-link" class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdownGenre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="genre-link" class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Genre
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="genre-link">
                 <a class="dropdown-item" href="{% url 'products' %}?genre=Motivational%20%26%20Inspirational">Motivational & Inspirational</a>
                 <a class="dropdown-item" href="{% url 'products' %}?genre=Self-help">Self-help</a>
                 <a class="dropdown-item" href="{% url 'products' %}?genre=Spirituality">Spirituality</a>
-                <a class="dropdown-item" href="{% url 'products' %}?genre=Personal finance">Financial</a>
+                <a class="dropdown-item" href="{% url 'products' %}?genre=Personal%20finance">Financial</a>
                 <a class="dropdown-item" href="{% url 'products' %}?genre=Biography">Biography</a>
             </div>
         </li>
