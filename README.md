@@ -624,6 +624,13 @@ The main purpose of this project is to create a full stack website with django i
 
  ## Libraries & Tools 
 
+  *  psycopg2, PostgreSQL database adapter for the Python programming language
+  *  gunicorn, handles HTML rendering, authentication, administration, and backend logic
+  *  allauth, dealing with account authentication, registration, management, and third-party (social) account authentication
+  *  django-crispy-forms, controls the rendering behavior of Django forms
+  
+  <br>
+
 
  - [Ignore X-Frame headers](https://microsoftedge.microsoft.com/) to properly display my website in Am I Responsive mock-up
  - [Am I Responsive](http://ami.responsivedesign.is/) was usedfor creating the multi-device mock-up at the top of this README.md file
@@ -638,6 +645,9 @@ The main purpose of this project is to create a full stack website with django i
  - [Paint](https://www.microsoft.com/en-us/windows/paint)- to edit, update, crop pictures
  - [Balsamiq](https://balsamiq.com/)- I used to create Wireframes
  - [dbdiagram](https://dbdiagram.io/)- Tool I used to create database structure diagram.
+ - [Gitpod](https://www.gitpod.io/)- My primary IDE during development.
+ - [w3schools](https://www.w3schools.com/)- For tutorials
+ - [Stack Overflow](https://stackoverflow.com/)- For specific issues/errors
 
  <br>
 
@@ -656,7 +666,7 @@ The main purpose of this project is to create a full stack website with django i
  - [JSHint](https://jshint.com/)
  - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
  - [W3C Markup Validation Service](https://validator.w3.org/)
-
+ - [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
 
 
 
