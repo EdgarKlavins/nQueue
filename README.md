@@ -628,7 +628,7 @@ The main purpose of this project is to create a full stack website with django i
   *  gunicorn, handles HTML rendering, authentication, administration, and backend logic
   *  allauth, dealing with account authentication, registration, management, and third-party (social) account authentication
   *  django-crispy-forms, controls the rendering behavior of Django forms
-  
+
   <br>
 
 
@@ -667,6 +667,90 @@ The main purpose of this project is to create a full stack website with django i
  - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
  - [W3C Markup Validation Service](https://validator.w3.org/)
  - [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
+
+ <br>
+
+  ## Testing
+
+  Testing made in separate file [TESTING.md](TESTING.md)
+
+  <br>
+
+ ## Storage & Hosting
+
+ - [Heroku](https://id.heroku.com/login)
+   - Heroku is the deployment source I used for this project.
+
+ - [Github](https://github.com/)
+   - Github was used to create and store the project repository.
+
+ - [Amazon Web Services](https://aws.amazon.com/)
+   - AWS is used to host and store static files and media.
+
+ - [ElephantSQL](https://www.elephantsql.com/)
+   - ElephantSQL is used to host the website's PostgreSQL database.
+
+  <br>
+
+ ## Deployment
+
+   ### Forking the Github Repository
+   1. Open the Github repository at https://github.com/EdgarKlavins/nQueue
+   2. Click on the fork button found in the top right corner.
+
+   ### Creating a Local Clone
+   1. Open the Github repository at https://github.com/EdgarKlavins/nQueue
+   2. Click on the Code button;
+   3. Choose to clone using either HTTPS, SSH, or Github CLI and click the copy button to copy the link address;
+   4. In a code editor, change the current working directory to the location desired for the cloned directory;
+   5. Type 'git clone' into the terminal and paste the link address copied earlier;
+   6. Press enter to create a local clone.
+
+   ### Creating a Database with ElephantSQL
+   1. Log in with GitHub to the ElephantSQL.
+   2. Create new team.
+   3. Click 'Create New Instance'.
+   4. Choose your plan.
+   5. Select your region.
+   6. Click 'Review'.
+   7. Click 'Create instance'.
+   8. Click on the name of your database and copy the URL to your clickboard.
+
+   ### Creating a Heroku app
+   1. Type `pip3 freeze --local > requirements.txt` into the Gitpod terminal to create a requirements.txt file.
+   2. Type `echo web: python app.py > Procfile` into the terminal to create a Procfile.
+   3. Commit and push the changes to Github.
+   4. Login to your Heroku Account.
+   5. Click 'New' -> 'Create new app'.
+   6. Enter a name for your project and select your region.
+   7. Click 'Create app'.
+   8. Go to 'Settings', click 'Reveal Config Vars'.
+   9. Add the following variables:
+      * DATABASE_URL: your ElephantSQL database url
+      * IP: 0.0.0.0
+      * PORT: 5000
+      * SECRET_KEY: your secret key
+      * DEBUG: True
+   10. Click on the 'Deploy' tab.
+   11. Click 'Connect to Github'.
+   12. Find your depo and click 'Connect'
+   13. Click 'Deploy Branch'.
+   14. Click 'More' -> 'Run console'
+   15. Type in `python3`
+   16. Type `from taskmanager import db` -> `db.create_all()` -> `exit().`
+   17. Click 'Open App'.
+  
+  <br>
+
+ ## Acknowledgements
+
+I would like to express my gratitude to:
+
+* As always, a heartfelt thank you to my tutor, Ben from City of Bristol College, 
+    for consistently stepping up and offering invaluable support.
+* My friends and colleagues for testing the website on their devices and providing 
+    valuable feedback, ensuring its compatibility and functionality across different 
+    platforms.
 
 
 
