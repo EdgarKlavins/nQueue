@@ -15,6 +15,38 @@ My milestone Project 4 is a fully functional online bookstore dedicated exclusiv
 [Find the project repository here.](https://github.com/EdgarKlavins/nQueue)
 
 
+## Table of Contents
+
+- [UX](#ux)
+  
+  - [Project Goals](#project-goals)
+  - [User Stories](#user-stories)
+- [Design](#design)
+  - [Wireframes](#wireframes)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+  - [Icons](#icons)
+- [Features](#features)
+  - [Header](#header)
+  - [Navigation Bar](#navigation-bar)
+  - [Homepage Content](#homepage-content)
+  - [Footer](#footer)
+  - [Dynamic Messaging System/Toasts](#dynamic-messaging-systemtoasts)
+  - [Product Listings](#product-listings)
+  - [Product Details Page](#product-details-page)
+  - [Shopping Bag Page](#shopping-bag-page)
+  - [User Authorization and Authentication](#user-authorization-and-authentication)
+  - [Future Features](#future-features)
+- [Database Models](#database-models)
+  - [Models Overview and Relationships](#models-overview-and-relationships)
+  - [Relationships](#relationships)
+- [Technologies Used](#technologies-used)
+  - [Languages Used](#languages-used)
+  - [Libraries & Tools](#libraries--tools)
+- [Payments](#payments)
+- [Testing & Code Validation](#testing--code-validation)
+
 # UX
 
 ### Desciption
@@ -741,6 +773,14 @@ The main purpose of this project is to create a full stack website with django i
    17. Click 'Open App'.
   
   <br>
+
+ ## Code
+ - The framework for this project was adapted from the Code Institute Boutique Ado walkthrough. I have customized the website extensively to align with my unique vision. While my checkout process, Stripe payments, webhooks, and email verification closely follow the walkthrough, my primary focus was on tailoring the website to meet the specific goals of my users, rather than expanding additional checkout or payment features.
+ <br>
+
+ Rest of the references, if being used, are as links above the code
+
+ <br>
 
  ## Acknowledgements
 
