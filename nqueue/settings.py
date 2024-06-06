@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-earhrn2ge-o2et0shwz!e%@@i&e2gy1&jf_=3q*go4#1w58xv*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ 'nqueuebookstore-234df69c8477.herokuapp.com', '8000-edgarklavins-nqueue-avb8sgexda1.ws-eu114.gitpod.io' ]
+ALLOWED_HOSTS = [ 'nqueuebookstore-234df69c8477.herokuapp.com', '8000-edgarklavins-nqueue-u7f32nvivsz.ws-eu114.gitpod.io' ]
 
 
 # Application definition
